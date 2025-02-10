@@ -1,0 +1,13 @@
+# Ignorer l'environnement virtuel
+venv/
+
+# Ignorer les fichiers de clés privées/publiques
+private.key
+private.pem
+public.key
+public.pem
+
+# Ignorer les fichiers temporaires
+__pycache__/
+*.pyc
+*.pyo

@@ -1,0 +1,18 @@
+import jwt
+import datetime
+
+# Clé secrète pour signer le JWT (à garder privée !)
+secret_key = "ma_super_cle_secrete"
+
+# Création du payload
+payload = {
+    "sub": "1234567890",
+    "name": "John Doe",
+    "iat": datetime.datetime.utcnow(),
+    "exp": datetime.datetime.utcnow() + datetime.timedelta(hours=1)  # Expiration dans 1h
+}
+
+# Génération du JWT
+token = jwt.encode(payload, secret_key, algorithm="HS256")
+
+print("JWT généré :", token)
