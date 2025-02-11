@@ -1,3 +1,4 @@
+
 # JSON Web Token Manager
 
 JSON Web Token Manager is a Python-based tool that allows users to generate, verify, and manage JWTs (JSON Web Tokens) using RSA256 encryption. This project provides a command-line interface (CLI) with interactive and scriptable options.
@@ -16,19 +17,45 @@ Before running the script, make sure you have the following:
 
 - Python 3.6+
 - Virtual environment (recommended)
+- Required dependencies installed
 
-## Dependencies
+### Installing Dependencies
 
-This project requires the following Python packages:
-
-- `pyjwt`
-- `cryptography`
-
-They will be installed automatically using:
+To install the required dependencies for this project, run:
 
 ```sh
 pip install -r requirements.txt
 ```
+
+The `requirements.txt` file contains the necessary packages for the project, and this command will install them into your environment.
+
+### Generating `requirements.txt`
+
+If you have added new dependencies or want to regenerate the `requirements.txt` file to reflect the current state of your virtual environment, use the following command:
+
+```sh
+pip freeze > requirements.txt
+```
+
+This command will create or update the `requirements.txt` file with the exact versions of all installed Python packages in your current environment. The file will look like this:
+
+```
+flask==2.1.1
+requests==2.27.1
+numpy==1.1.4
+```
+
+Once the `requirements.txt` file is generated, you can share it with others or use it to recreate the same environment with the exact package versions.
+
+### Using `requirements.txt` on Another Machine
+
+To recreate the same environment on another machine, first set up a virtual environment, then install the dependencies listed in the `requirements.txt` file by running:
+
+```sh
+pip install -r requirements.txt
+```
+
+This ensures that all dependencies are installed with the exact versions specified, maintaining consistency across different setups.
 
 ## Installation
 
@@ -42,21 +69,10 @@ pip install -r requirements.txt
 2. Set up a virtual environment:
 
    ```sh
-   python -m venv ./venv
+   python -m venv venv
+   source venv/bin/activate  # On macOS/Linux
+   venv\Scripts\activate     # On Windows
    ```
-
-   - On **macOS/Linux**:
-     ```sh
-     source ./venv/bin/activate
-     ```
-   - On **Windows (cmd/PowerShell)**:
-     ```sh
-     venv\Scripts\activate
-     ```
-   - On **Windows (Git Bash)**:
-     ```sh
-     venv/Scripts/activate
-     ```
 
 3. Install dependencies:
 
@@ -148,5 +164,4 @@ This project is licensed under the MIT License.
 
 ## Author
 
-Maintained by [valorisa](https://github.com/valorisa).
-^
+Maintained by [valorisa](https://github.com/valorisa).^
