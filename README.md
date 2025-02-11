@@ -16,7 +16,19 @@ Before running the script, make sure you have the following:
 
 - Python 3.6+
 - Virtual environment (recommended)
-- Required dependencies installed
+
+## Dependencies
+
+This project requires the following Python packages:
+
+- `pyjwt`
+- `cryptography`
+
+They will be installed automatically using:
+
+```sh
+pip install -r requirements.txt
+```
 
 ## Installation
 
@@ -31,9 +43,20 @@ Before running the script, make sure you have the following:
 
    ```sh
    python -m venv venv
-   source venv/bin/activate  # On macOS/Linux
-   venv\Scripts\activate     # On Windows
    ```
+
+   - On **macOS/Linux**:
+     ```sh
+     source venv/bin/activate
+     ```
+   - On **Windows (cmd/PowerShell)**:
+     ```sh
+     venv\Scripts\activate
+     ```
+   - On **Windows (Git Bash)**:
+     ```sh
+     venv/Scripts/activate
+     ```
 
 3. Install dependencies:
 
@@ -126,3 +149,4 @@ This project is licensed under the MIT License.
 ## Author
 
 Maintained by [valorisa](https://github.com/valorisa).
+^
