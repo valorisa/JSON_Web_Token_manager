@@ -69,8 +69,8 @@ This ensures that all dependencies are installed with the exact versions specifi
 2. Set up a virtual environment:
 
    ```sh
-   python -m venv venv
-   source venv/bin/activate  # On macOS/Linux
+   python -m venv ./venv
+   source ./venv/bin/activate  # On macOS/Linux
    venv\Scripts\activate     # On Windows
    ```
 
