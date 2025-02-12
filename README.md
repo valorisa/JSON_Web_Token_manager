@@ -42,12 +42,12 @@ pip install -r requirements.txt
 2. Set up a virtual environment:
 
    ```sh
-   python -m venv venv
+   python -m venv ./venv
    ```
 
    - On **macOS/Linux**:
      ```sh
-     source venv/bin/activate
+     source ./venv/bin/activate
      ```
    - On **Windows (cmd/PowerShell)**:
      ```sh
